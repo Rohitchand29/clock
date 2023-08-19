@@ -1,8 +1,8 @@
 const hour=document.getElementById("hour");
 const min=document.getElementById("minute");
 const sec=document.getElementById("second");
-
-setInterval(() => {
+updateTime()
+function updateTime(){
     d = new Date()
     
     htime = d.getHours()
@@ -14,4 +14,6 @@ setInterval(() => {
     hour.style.transform = `rotate(${hrotation}deg)`;
     min.style.transform = `rotate(${mrotation}deg)`;
     sec.style.transform = `rotate(${srotation}deg)`;
-}, 1000)
+}
+
+setInterval(updateTime(), 1000);
