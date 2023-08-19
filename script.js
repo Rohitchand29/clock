@@ -16,4 +16,4 @@ function updateTime(){
     sec.style.transform = `rotate(${srotation}deg)`;
 }
 
-setInterval(updateTime(), 1000);
+setInterval(updateTime, 1000);
